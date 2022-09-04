@@ -1,0 +1,210 @@
+.cabecalho__nome{
+
+    color: var(--azul-escuro);
+    cursor: pointer;
+
+}
+
+.cabecalho__nome:hover{
+
+    text-decoration: underline;
+
+}
+
+.anunciar{
+
+    padding: 1em;
+
+}
+
+.anunciar__formulario{
+
+    background-color: var(--branco);
+    padding-bottom: 4em;
+    margin-bottom: 3em;
+
+}
+
+.formulario__titulo{
+
+    color: var(--azul-escuro);
+    font-size: 45px;
+    padding: 1em 0;
+    text-align: center;
+
+
+}
+
+.formulario__container{
+
+    display: block;
+
+}
+
+.container__campos{
+
+    padding: 0 2em;
+
+}
+
+.campos__texto{
+
+    display: block;
+    margin: 1em 0;
+
+}
+
+.campos__input{
+
+    border: 1px solid var(--azul-pesquisa);
+    width: 90%;
+    max-width: 320px;
+    height: 40px;
+    border-radius: 5px;
+
+}
+
+.campos__input-select, .campos__input{
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+.campos__input-textarea{
+
+    resize: none;
+    height: 92px;
+
+}
+
+.campos__input-arquivo{
+
+    display: none;
+
+}
+
+.campos__input-botao{
+
+    border-color: transparent;
+    cursor: pointer;
+
+}
+
+.container__imagem{
+
+    padding: 2em;
+
+}
+
+.imagem__img{
+
+    width: 90%;
+
+}
+
+.imagem__botoes{
+
+    display: flex;
+
+}
+
+.imagem__botoes > input[type="submit"]{
+
+    display: none;
+
+}
+
+.botoes__botao{
+
+    height: 38px;
+    color: var(--branco);
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.botao__cancelar{
+
+    width: 150px;
+    background-color: var(--preto);
+
+}
+
+.botao__publicar{
+
+    width: 207px;
+    background-color: var(--azul-pesquisa);
+
+}
+
+@media screen and (min-width: 768px) {
+    
+    .anunciar{
+
+        padding: 1em 5em;
+
+    }
+
+    .formulario__titulo{
+
+        padding-left: 0.7em;
+        text-align: unset;
+
+    }
+
+    .formulario__container{
+
+        display: flex;
+
+    }
+    
+    .container__campos{
+
+        width: 100%;
+        padding-left: 2em;
+
+    }
+
+    .container__imagem{
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+    }
+
+    .botao__cancelar{
+
+        width: 10vw;
+
+    }
+
+    .botao__publicar{
+
+        width: 17vw;
+
+    }
+
+    .imagem__img{
+
+        width: 130%;
+
+    }
+
+
+
+}
+
+@media screen and (min-width: 1360px){
+
+    .anunciar{
+
+        padding: 1em 12em;
+
+    }
+
+}

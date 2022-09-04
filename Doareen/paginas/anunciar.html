@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Anunciar</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" href="/css/reset.css">
+		<link rel="stylesheet" href="/css/styles.css">
+	</head>
+	<body>
+		
+		<header class="cabecalho">
+		
+			<div class="cabecalho__container">
+	
+				<ul class="cabecalho__lista">
+					
+					<li class="lista__item"><a href="index.html" class="lista__link">Início</a></li>
+					<li class="lista__item"><a href="#" class="lista__link">Quem Somos?</a></li>
+					<li class="lista__item"><a href="#" class="lista__link">Contato</a></li>
+					
+				</ul>
+				
+				<h2 class="cabecalho__nome">Enzo Gabriel</h2>
+			
+			</div>
+		
+		</header>
+
+		<section class="banner">
+		
+			<img src="/img/logo-dark 1.svg" class="banner__logo">
+		
+		</section>
+
+        <section class="anunciar">
+
+            <form action="" class="anunciar__formulario">
+
+                <h2 class="formulario__titulo">Publicar item</h2>
+
+                <div class="formulario__container">
+
+                    <div class="container__campos">
+
+                        <label class="campos__texto" for="nomeItem">Nome do item:</label>
+
+                        <input class="campos__input" type="text" name="nomeItem" id="nomeItem" placeholder="Mesa de Jantar" required>
+
+                        <label class="campos__texto" for="categoria">Categoria</label>
+
+                        <select class="campos__input campos__input-select" name="categoria">
+                            <option>Eletrodoméstico</option>
+                            <option>Móvel</option>
+                            <option>Utensílio</option>
+                        </select>
+
+                        <label class="campos__texto" for="condicao">Estado de uso:</label>
+
+                        <select class="campos__input campos__input-select" name="condicao">
+
+                            <option>Novo</option>
+                            <option>Seminovo</option>
+                            <option>Usado</option>
+                            
+                        </select>
+
+                        <label class="campos__texto" for="descricao">Descrição:</label>
+
+                        <textarea class="campos__input campos__input-textarea" required name="descricao"></textarea>
+
+                        <label class="campos__texto" for="file">Selecionar Foto: </label>
+
+                        <input class="campos__input campos__input-arquivo" type="file" name="file" id="file">
+
+                        <button class="campos__input campos__input-botao" type="button">Selecionar Arquivo</button>
+
+                    </div>
+
+                    <div class="container__imagem">   
+
+                        <img class="imagem__img" id="imagem" src="/img/img_aviso.png">
+
+                        <div class="imagem__botoes">
+
+                            <button class="botoes__botao botao__cancelar">Cancelar</button>
+                            <button class="botoes__botao botao__publicar">Publicar item</button>
+
+                            <input type="submit" id="btEnviar">
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </form>
+
+        </section>
+
+		<footer class="rodape">
+
+			<div class="rodape__descricao">
+
+				<img src="/img/logo-light 1.svg" alt="Logo Doareen" class="rodape__descricao-imagem">
+
+				<p class="rodape__descricao-texto">O doareen é uma plataforma de doação onde pessoas que desejam doar algum item pode publica-lo na plataforma, e as pessoas interessadas manifestam o desejo no item e combina com o doador a retirada. </p>
+
+			</div>
+
+			<div class="rodape__container">
+
+				<ul class="rodape__lista">
+
+					<li class="rodape__lista-item rodape__lista-titulo"><img src="/img/logo-light 1.svg" alt="Logo Doareen" class="rodape__lista-imagem"></li>
+					<li class="rodape__lista-item"><p>O doareen é uma plataforma de doação onde pessoas que desejam doar algum item pode publica-lo na plataforma, e as pessoas interessadas manifestam o desejo no item e combina com o doador a retirada.</p><a class="saiba-mais" href="#">Saiba mais  ></a></li>
+
+				</ul>
+
+				<ul class="rodape__lista">
+					
+					<li class="rodape__lista-item rodape__lista-titulo">Categorias</li>
+					<li class="rodape__lista-item"><a class="rodape__lista-link" href="moveis.html">Móveis</a></li>
+					<li class="rodape__lista-item"><a class="rodape__lista-link" href="eletrodomesticos.html">Eletrodomésticos</a></li>
+					<li class="rodape__lista-item"><a class="rodape__lista-link" href="utensilios.html">Utensílios</a></li>
+
+				</ul>
+
+				<ul class="rodape__lista">
+
+					<li class="rodape__lista-item rodape__lista-titulo">Navegação</li>
+					<li class="rodape__lista-item"><a class="rodape__lista-link" href="index.html">Início</a></li>
+					<li class="rodape__lista-item"><a class="rodape__lista-link" href="#">Quem somos?</a></li>
+					<li class="rodape__lista-item"><a class="rodape__lista-link" href="#">Contato</a></li>
+
+
+				</ul>
+
+			</div>
+
+		</footer>
+		
+	</body>
+</html>

@@ -1,0 +1,23 @@
+@import url("/css/home/cabecalho.css");
+@import url("/css/home/banner.css");
+@import url("/css/home/categorias.css");
+@import url("/css/home/rodape.css");
+@import url("/css/categorias/categoria.css");
+@import url("/css/anunciar/formulario.css");
+
+body{
+
+	font-size: 16px;
+	font-family: "Open Sans";
+	--branco: #FFFFFF;
+	--preto: #000000;
+	--azul-botao: #3368ff;
+	--azul-pesquisa: #42BCF0;
+	--cinza: gray;
+	--cor-footer: #3D3D3C;
+	--azul-escuro: #006B99;
+	--cor-fundo: #EDEDED;
+
+	background-color: var(--cor-fundo);
+
+}
