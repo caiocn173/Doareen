@@ -100,13 +100,14 @@
 
 .imagem__img{
 
-    width: 90%;
+    width: 100%;
 
 }
 
 .imagem__botoes{
 
     display: flex;
+    padding: 1em 0;
 
 }
 
@@ -188,14 +189,6 @@
         width: 17vw;
 
     }
-
-    .imagem__img{
-
-        width: 130%;
-
-    }
-
-
 
 }
 
