@@ -1,0 +1,160 @@
+.botao__logout{
+
+	border: 2px solid var(--azul-botao);
+	border-radius: 100px;
+	padding: 0.5em 0.4em;
+	
+}
+
+.botao__logout > .lista__link{
+	
+	color: var(--azul-botao);
+	
+}
+
+.secao-perfil{
+
+    background-color: var(--branco);
+    box-shadow: 5px 10px 20px var(--preto);
+    border-radius: 10px;
+    padding: 1em;
+    margin: 1em 1em 3em 1em;
+
+}
+
+.secao-perfil__nome h3{
+
+    font-size: 18px;
+    color: var(--azul-escuro);
+
+}
+
+.secao-perfil__nome h2{
+
+    font-size: 36px;
+    color: var(--cinza-escuro);
+
+}
+
+.secao-perfil__opcoes{
+
+    padding: 2em 0;
+
+}
+
+.opcoes-lista__item{
+
+    padding: 0.5em 0;
+
+}
+
+.opcoes-lista__link{
+
+    color: var(--azul-escuro);
+    text-decoration: none;
+
+}
+
+.secao-botoes{
+
+    margin: 4em 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.secao-botoes__botoes{
+
+    display: flex;
+    align-items: center;
+    width: 70vw;
+    height: 100px;
+    background: var(--azul-pesquisa);
+    border-radius: 5px;
+    padding: 0.4em;
+    margin: 1em 0;
+    text-decoration: none;
+
+}
+
+
+.botao__logo{
+
+    border-right: 1px solid var(--preto);
+    margin-right: 1.5em;
+    width: 60px;
+    height: 60px;
+    padding: 0 1em;
+
+}
+
+.botao__titulo{
+
+    color: var(--branco);
+    font-size: 24px;
+
+}
+
+
+.secao-itens{
+
+    margin: 2em;
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.secao-itens__titulo{
+
+    font-size: 36px;
+    color: var(--azul-escuro);
+
+}
+
+hr{
+
+    margin: 2em 0;
+
+}
+
+@media screen and (min-width: 768px){
+
+    .secao__container{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
+    .secao-perfil{
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 60vw;
+        margin: 1em 4em 3em 4em;
+
+    }
+
+    .secao-botoes__botoes{
+
+        width: 475px;
+
+    }
+
+}
+
+@media screen and (min-width: 1360px){
+
+    .secao-perfil{
+
+        max-width: 1315px;
+        width: 79vw;
+
+    }
+
+}

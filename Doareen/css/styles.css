@@ -4,6 +4,7 @@
 @import url("/css/home/rodape.css");
 @import url("/css/categorias/categoria.css");
 @import url("/css/anunciar/formulario.css");
+@import url("/css/meu-perfil/meu-perfil.css");
 
 body{
 
@@ -14,6 +15,7 @@ body{
 	--azul-botao: #3368ff;
 	--azul-pesquisa: #42BCF0;
 	--cinza: gray;
+	--cinza-escuro: #636363;
 	--cor-footer: #3D3D3C;
 	--azul-escuro: #006B99;
 	--cor-fundo: #EDEDED;
