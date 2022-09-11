@@ -5,6 +5,7 @@
 @import url("/css/categorias/categoria.css");
 @import url("/css/anunciar/formulario.css");
 @import url("/css/meu-perfil/meu-perfil.css");
+@import url("/css/meus-interesses/meus-interesses.css");
 
 body{
 
@@ -19,6 +20,7 @@ body{
 	--cor-footer: #3D3D3C;
 	--azul-escuro: #006B99;
 	--cor-fundo: #EDEDED;
+	--vermelho: #FF0000;
 
 	background-color: var(--cor-fundo);
 
