@@ -1,0 +1,169 @@
+.chat-doador{
+
+    margin: 4em 1em;
+
+}
+
+.produtos-doador__chat{
+
+    box-shadow: none;
+
+}
+
+.chat-doador__container{
+
+    border-radius: 5px;
+
+}
+
+.chat-doador__lista{
+
+    height: 500px;
+    max-width: 332px;
+    overflow-y: overlay;
+    margin: 2em auto;
+    background-color: var(--branco);
+
+}
+
+.chat-doador__lista-invisivel{
+
+    display: none;
+
+}
+
+.lista__titulo{
+
+    background-color: var(--azul-escuro);
+    text-align: center;
+    color: var(--branco);
+    padding: 2em 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.lista__interessado{
+
+    text-align: center;
+    border-top: 1px solid var(--cinza);
+    border-bottom: 1px solid var(--cinza);
+    padding: 2em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.chat{
+
+    background-color: var(--branco);
+    padding: 1em 0;
+    display: none;
+
+}
+
+.chat-visivel{
+
+    display: block;
+
+}
+
+.chat-doador__voltar{
+
+    width: 45px;
+    margin: 0 1em;
+
+}
+
+.chat-doador__doador{
+
+    padding: 0.5em 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.chat-doador__reservar{
+
+    background-color: var(--preto);
+    color: var(--branco);
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 1em;
+
+}
+
+.aviso{
+
+    display: none;
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .chat-doador{
+
+        margin: 4em 2em;
+
+    }
+
+    .chat-doador__container{
+
+        display: block;
+
+    }
+
+    .flex{
+
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .chat-doador__lista{
+
+        margin: 0 1em 0 0;
+        width: 332px;
+        height: 610px;
+
+    }
+
+    .chat{
+
+        width: 100%;
+
+    }
+
+    .chat-doador__voltar, .chat-doador__doador, .chat-interessado__mensagens{
+
+        display: none;
+
+    }
+
+    .aviso{
+
+        display: block;
+        font-size: 47px;
+        line-height: 110%;
+        font-weight: 300;
+        text-align: center;
+        margin-top: 260px;
+
+    }
+    
+}
+
+@media screen and (min-width: 1366px){
+
+    .chat-doador{
+
+        margin: 4em 9em;
+
+    }
+
+}
