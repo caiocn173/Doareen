@@ -1,0 +1,164 @@
+.chat-interessado{
+
+    margin: 4em 1em;
+
+}
+
+
+.produtos-interessados__chat{
+
+    box-shadow: none;
+
+}
+
+
+.chat-interessado__container{
+
+    background-color: var(--branco);
+    border-radius: 10px;
+    padding: 1em 0;
+
+}
+
+.chat-interessado__doador{
+
+    padding: 0.5em 1em;
+
+}
+
+.doador__titulo{
+
+    font-size: 16px;
+    color: var(--azul-pesquisa);
+
+}
+
+.doador__nome{
+
+    font-size: 24px;
+
+}
+
+.chat-interessado__mensagens{
+
+    background-color: var(--cor-fundo);
+    margin: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    height: 450px;
+    overflow-y: overlay;
+    position: relative;
+
+}
+
+.mensagens{
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 2em 0;
+    min-height: 330px;
+
+}
+
+.mensagem-interessado{
+    width: 50%;
+    background-color: var(--branco);
+    border-radius: 10px;
+    border: 1px solid var(--azul-pesquisa);
+    display: flex;
+    color: var(--branco);
+    max-width: 290px;
+    min-height: 50px;
+    padding: 0.3em 0.5em;
+    align-items: center;
+    align-self: start;
+    word-break: break-all;
+}
+
+.mensagem-interessado p{
+
+    color: var(--preto)
+
+}
+
+.mensagem-dono{
+    width: 50%;
+    background-color: var(--azul-pesquisa);
+    border-radius: 10px;
+    display: flex;
+    border: 1px solid var(--azul-pesquisa);
+    max-width: 290px;
+    padding: 0.3em 2em;
+    align-items: center;
+    min-height: 50px;
+    word-break: break-all;
+    align-self: end;
+}
+
+.mensagem-dono{
+
+    color: var(--branco);
+
+}
+
+
+.chat-interessado__container-input{
+
+    left: 5%;
+    bottom: 4%;
+
+}
+
+.chat-interessado__input{
+
+    align-items: center;
+    background-color: var(--branco);
+    border: 1px solid var(--azul-pesquisa);
+    height: 50px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.input{
+
+    border: none;
+    width: 70%;
+    padding: 13px 10px;
+    outline: none;
+
+}
+
+.input__enviar{
+
+    justify-self: flex-end;
+    margin-right: 1em;
+
+}
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+@media screen and (min-width: 768px){
+
+    .chat-interessado{
+
+        margin: 4em 5em;
+
+    }
+
+}
+
+@media screen and (min-width: 1366px){
+
+    .chat-interessado{
+
+        margin: 4em 8em;
+
+    }
+
+}
