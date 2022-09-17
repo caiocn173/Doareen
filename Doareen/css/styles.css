@@ -22,6 +22,7 @@ body{
 	--cor-footer: #3D3D3C;
 	--azul-escuro: #006B99;
 	--cor-fundo: #EDEDED;
+	--vermelho: #FF0000;
 
 	background-color: var(--cor-fundo);
 
