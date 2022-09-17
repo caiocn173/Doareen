@@ -5,6 +5,9 @@
 @import url("/css/categorias/categoria.css");
 @import url("/css/anunciar/formulario.css");
 @import url("/css/meu-perfil/meu-perfil.css");
+@import url("/css/ver-produto/ver-produto.css");
+@import url("/css/ver-produto/relacionados.css");
+@import url("/css/meus-interesses/meus-interesses.css");
 
 body{
 

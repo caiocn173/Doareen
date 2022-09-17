@@ -1,0 +1,27 @@
+.relacionados{
+
+    margin: 5em 2em;
+
+}
+
+.relacionados__container{
+
+    margin: 2em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.relacionados__titulo{
+
+    color: var(--azul-escuro);
+    font-size: 23px;
+
+}
+
+.relacionados__ver-tudo{
+
+    margin: 1em 0;
+
+}

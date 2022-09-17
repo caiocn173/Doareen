@@ -1,0 +1,142 @@
+.produto{
+
+    margin: 2em;
+    background-color: var(--branco);
+    padding: 0.4em;
+    border-radius: 10px;
+
+}
+
+.produto__imagem{
+
+    width: 75%;
+    max-width: 438px;
+    margin: 1em auto;
+    height: 200px;
+    background-color: var(--azul-botao);
+    border-radius: 10px;
+
+}
+
+.produto__informacoes{
+
+    text-align: center;
+
+}
+
+.produto__titulo{
+
+    color: var(--azul-pesquisa);
+    font-size: 24px;
+
+}
+
+.produto__localizacao{
+
+    justify-content: center;
+
+}
+
+.produto__dono{
+
+    color: var(--azul-pesquisa);
+
+}
+
+.produto__dono > label{
+
+    margin-left: 5px;
+    color: var(--preto);
+
+}
+
+.produto__descricao{
+
+    margin: 4em 0;
+
+}
+
+.produto__condicao{
+
+    color: var(--azul-pesquisa);
+    margin: 3em 0;
+
+}
+
+.produto__condicao > label{
+
+    color: var(--preto);
+
+}
+
+.produto__botao{
+
+    color: var(--branco);
+    background-color: var(--azul-pesquisa);
+    padding: 1em;
+    border-radius: 10px;
+
+}
+
+.info{
+
+    margin: 1em 0;
+
+}
+
+@media screen and (min-width: 768px){
+
+    .produto{
+
+        display: flex;
+        justify-content: space-evenly;
+        min-height: 350px;
+
+    }
+
+    .produto__imagem{
+
+        height: 250px;
+        margin: auto 1em;
+
+    }
+
+    .produto__informacoes{
+
+        text-align: left;
+        padding: 2em;
+    
+    }
+
+    .produto__titulo{
+
+        margin: 0.5em 0 0 0;
+        
+    }
+
+    .produto__localizacao{
+
+        justify-content: flex-start;
+        padding: 0;
+
+    }
+
+    .produto__descricao{
+
+        margin: 3em 0;
+
+    }
+
+    .produto__botao{
+
+        text-align: center;
+
+    }
+
+    .info{
+
+        margin: 0;
+
+    }
+
+}
