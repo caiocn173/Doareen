@@ -23,6 +23,12 @@
 	
 }
 
+.cabecalho__nome-especifico{
+
+	display: none;
+
+}
+
 .lista__item{
 	
 	margin: 1em 0;
