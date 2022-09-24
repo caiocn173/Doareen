@@ -1,9 +1,9 @@
 <?php
 
-$dbHost = 'sql203.epizy.com';
-$dbUsername = 'epiz_32661291';
-$dbPassword = 'D6UrJcFFcxgW';
-$dbName = 'epiz_32661291_doareen';
+$dbHost = 'sql10.freemysqlhosting.net';
+$dbUsername = 'sql10522028';
+$dbPassword = '2qTSZeEq1S';
+$dbName = 'sql10522028';
 
 $conexao = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
 
