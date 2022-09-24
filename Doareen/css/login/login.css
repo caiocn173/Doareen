@@ -1,0 +1,63 @@
+.login{
+
+    margin: 7em 0;
+
+}
+
+.login__logo{
+
+    max-width: 400px;
+
+}
+
+.login__campos{
+
+    background-color: var(--branco);
+    margin: 1em auto;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 5px;
+    padding-bottom: 1em;
+
+}
+
+.login__container{
+
+    padding: 1em;
+    text-align: center;
+
+}
+
+.container__input-login{
+
+    width: 90%;
+    padding: 0.5em;
+
+}
+
+.container__botoes{
+
+    text-align: center;
+
+}
+
+.login__botao{
+
+    padding: 1em 0;
+    background-color: var(--azul-pesquisa);
+    color: var(--branco);
+    border-radius: 10px;
+    cursor: pointer;
+    width: 90%;
+    max-width: 337px;
+    margin: 0 auto 1em  auto;
+    text-align: center;
+
+}
+
+.login__botao-cadastro{
+
+    text-decoration: none;
+    color: var(--cinza);
+
+}
