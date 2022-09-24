@@ -84,7 +84,7 @@ function validarDados(array_dados){
 
 function cadastrar(array_dados){
 
-    let  url = "https://doareen-zzgi.vercel.app/api/cadastro_cliente/cadastro.php";
+    let  url = "https://doareen-zzgi.vercel.app/api/cadastro.php";
     let json = JSON.stringify(array_dados);
 
     $.ajax({
