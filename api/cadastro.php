@@ -1,8 +1,8 @@
 <?php
 
-    include("/api/model/funcoes.php");
+    include("/funcoes.php");
 
-    $funcoes = new funcoes;
+    //$funcoes = new funcoes;
     $dados = json_decode($_POST['dados'], true);
     
     print_r($dados);
