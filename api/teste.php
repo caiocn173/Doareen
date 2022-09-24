@@ -1,9 +1,9 @@
 <?php
 
-$dbHost = 'br902.hostgator.com.br';
-$dbUsername = 'bebefofu_interno';
-$dbPassword = 'efr041821';
-$dbName = 'bebefofu_sistema_picking';
+$dbHost = 'sql203.epizy.com';
+$dbUsername = 'epiz_32661291';
+$dbPassword = 'D6UrJcFFcxgW';
+$dbName = 'epiz_32661291_doareen';
 
 $conexao = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
 
