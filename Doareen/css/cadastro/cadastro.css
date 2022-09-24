@@ -1,0 +1,176 @@
+.cadastro{
+
+    margin: 7em 0;
+
+}
+
+.cadastro__logo{
+
+    width: 90vw;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.cadastro__campos{
+
+    background-color: var(--branco);
+    margin: 1em auto;
+    width: 90%;
+    max-width: 700px;
+    border-radius: 5px;
+
+}
+
+.cadastro__titulo{
+
+    color: var(--azul-escuro);
+    font-size: 36px;
+    padding: 0.4em;
+    text-align: center;
+
+}
+
+.cadastro__container{
+
+    padding: 1em;
+    text-align: center;
+
+}
+
+.container__campo{
+
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+
+}
+
+.container__input{
+
+    border: 1px solid var(--azul-pesquisa);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    width: 225px;
+    height: 30px;
+
+}
+
+.container__input-erro{
+
+    border: 1px solid var(--vermelho);
+
+}
+
+.container__input-texto-cep{
+
+    display: none;
+    color: var(--vermelho);
+
+}
+
+.container__campo-cep{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em;
+
+}
+
+.container__campo-cep-botao{
+
+    padding: 0.5em;
+    background-color: var(--azul-pesquisa);
+    border-radius: 5px;
+    color: var(--branco);
+    cursor: pointer;
+    margin-left: 0.5em;
+
+}
+
+.container__cidade-estado{
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.input__cidade{
+
+    width: 163px;
+
+}
+
+.container__estado{
+
+    margin-left: 0.3em;
+
+}
+
+.input__estado{
+
+    width: 57px;
+    height: 34px;
+
+}
+
+.container__3{
+
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.container__link{
+
+    text-decoration: none;
+    color: var(--cinza);
+
+}
+
+.container__botao{
+
+    padding: 1em;
+    background-color: var(--azul-pesquisa);
+    color: var(--branco);
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+@media screen and (min-width: 768px){
+
+    .cadastro__container{
+
+        display: flex;
+        justify-content: space-around;
+        text-align: left;
+
+    }
+
+    .container__campo-cep{
+
+        justify-content: flex-start;
+        margin: 0.5em 0.5em 0.5em 0;
+
+    }
+
+    .container__3{
+
+        justify-content: flex-end;
+
+    }
+
+    .container__botao{
+
+        padding: 1em 6em;
+
+    }
+
+}
