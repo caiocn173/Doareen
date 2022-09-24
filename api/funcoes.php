@@ -1,6 +1,6 @@
 <?php
 
-include("https://doareen-zzgi.vercel.app/api/database.php");
+include("database.php");
 
 class funcoes extends database{
 
