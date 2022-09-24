@@ -1,17 +1,16 @@
 <?php
 
-/*$servername = "sql203.epizy.com";
-$username = "epiz_32661291";
-$password = "D6UrJcFFcxgW";
-$dbName = "doareen";
+$dbHost = 'sql203.epizy.com';
+$dbUsername = 'epiz_32661291';
+$dbPassword = 'D6UrJcFFcxgW';
+$dbName = 'doareen';
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbName);
+$conexao = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
 
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}*/
-echo "Connected successfully";
+	if($conexao->connect_errno){
+		echo 'Erro';
+	}else{
+	    echo 'Sucesso';
+	}
 
 ?>
