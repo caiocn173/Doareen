@@ -1,8 +1,8 @@
 <?php
 
-    include("/funcoes.php");
+    include("https://doareen-zzgi.vercel.app/api/funcoes.php");
 
-    //$funcoes = new funcoes;
+    $funcoes = new funcoes;
     $dados = json_decode($_POST['dados'], true);
     
     print_r($dados);
