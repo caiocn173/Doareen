@@ -1,17 +1,17 @@
-@import url("/css/home/cabecalho.css");
-@import url("/css/home/banner.css");
-@import url("/css/home/categorias.css");
-@import url("/css/home/rodape.css");
-@import url("/css/categorias/categoria.css");
-@import url("/css/anunciar/formulario.css");
-@import url("/css/meu-perfil/meu-perfil.css");
-@import url("/css/ver-produto/ver-produto.css");
-@import url("/css/ver-produto/relacionados.css");
-@import url("/css/meus-interesses/meus-interesses.css");
-@import url("/css/chat-interessado/chat-interessado.css");
-@import url("/css/chat-doador/chat-doador.css");
-@import url("/css/cadastro/cadastro.css");
-@import url("/css/login/login.css");
+@import url("/Doareen/css/home/cabecalho.css");
+@import url("/Doareen/css/home/banner.css");
+@import url("/Doareen/css/home/categorias.css");
+@import url("/Doareen/css/home/rodape.css");
+@import url("/Doareen/css/categorias/categoria.css");
+@import url("/Doareen/css/anunciar/formulario.css");
+@import url("/Doareen/css/meu-perfil/meu-perfil.css");
+@import url("/Doareen/css/ver-produto/ver-produto.css");
+@import url("/Doareen/css/ver-produto/relacionados.css");
+@import url("/Doareen/css/meus-interesses/meus-interesses.css");
+@import url("/Doareen/css/chat-interessado/chat-interessado.css");
+@import url("/Doareen/css/chat-doador/chat-doador.css");
+@import url("/Doareen/css/cadastro/cadastro.css");
+@import url("/Doareen/css/login/login.css");
 
 body{
 
