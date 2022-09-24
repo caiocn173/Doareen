@@ -19,9 +19,9 @@ $result = mysqli_query($conexao, $sql);
 
 while($row = mysqli_fetch_assoc($result)){
 
-    foreach($row as $value){
+    foreach($row as $field => $value){
 
-        echo $value['nome_cliente'];
+        echo $value;
 
     }
 
