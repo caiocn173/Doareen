@@ -1,13 +1,12 @@
 const inputs = document.querySelectorAll(".container__input");
 const botaoCadastro = document.querySelector(".container__botao");
 
-let alertControl = 0;
-
 botaoCadastro.addEventListener("click", pegarDados);
 
 function pegarDados(){
 
     let array_dados = [];
+    let alertControl = 0;
 
     inputs.forEach((element) => {
 
@@ -34,6 +33,7 @@ function pegarDados(){
         alert("Um ou mais campos não foram preenchidos!");
 
         array_dados = [];
+        alertControl = 0;
 
     }else{
 
