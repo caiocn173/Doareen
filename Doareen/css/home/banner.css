@@ -27,7 +27,7 @@
 
 .banner__pesquisa::placeholder{
 	
-	background: url("/img/search.svg") no-repeat;
+	background: url("/Doareen/img/search.svg") no-repeat;
 	background-position-y: center;
 	background-position-x: 14em;
 	font-size: 18px;
@@ -39,7 +39,7 @@
 	width: 90vw;
 	height: 300px;
 	margin: 2em auto;
-	background-image: url("/img/background-descricao 1.svg");
+	background-image: url("/Doareen/img/background-descricao 1.svg");
 	
 	
 }
