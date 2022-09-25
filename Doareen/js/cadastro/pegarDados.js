@@ -5,7 +5,7 @@ botaoCadastro.addEventListener("click", pegarDados);
 
 function pegarDados(){
 
-    let array_dados = [];
+    let array_dados = new Object();
     let alertControl = 0;
 
     inputs.forEach((element) => {
@@ -69,10 +69,39 @@ function validarDados(array_dados){
     
             array_dados = [];
     
+        }else if(array_dados.cpf.length < 14){
+
+            alert("CPF informado não é válido");
+    
+            inputs[1].classList.add("container__input-erro");
+    
+            array_dados = [];
+
+        }else if(array_dados.cpf.length < 9){
+
+            alert("CEP informado não é válido");
+    
+            inputs[4].classList.add("container__input-erro");
+    
+            array_dados = [];
+
         }else{
     
+            inputs[1].classList.remove("container__input-erro");
+            inputs[4].classList.remove("container__input-erro");
             inputs[11].classList.remove("container__input-erro");
             inputs[12].classList.remove("container__input-erro");
+
+            array_dados.cpf = array_dados.cpf.replaceAll(".", "");
+            array_dados.cpf = array_dados.cpf.replace("-", "");
+
+            array_dados.cep = array_dados.cep.replace("-", "");
+
+            array_dados.numero = parseInt(array_dados.numero);
+
+            array_dados.telefone = array_dados.telefone.replace("-", "");
+            array_dados.telefone = parseInt(array_dados.telefone);
+
 
             cadastrar(array_dados);
     
@@ -86,7 +115,7 @@ function cadastrar(array_dados){
 
     let  url = "https://doareen-zzgi.vercel.app/api/cadastro.php";
     let json = JSON.stringify(array_dados);
-
+    console.log(array_dados);
     $.ajax({
 
         url: url,

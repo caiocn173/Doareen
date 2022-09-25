@@ -4,9 +4,7 @@
 
     $funcoes = new funcoes;
     $dados = json_decode($_POST['dados'], true);
-    
-    print_r($dados);
 
-    //$funcoes->cadastrar_cliente($dados)
+    echo $funcoes->verificar_cliente($dados);
 
 ?>
