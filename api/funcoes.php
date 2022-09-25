@@ -58,8 +58,8 @@ class funcoes extends database{
 
         }
 
-        $string = substr($string, 0,  -2);
-        $string .= ")";
+        $string = substr($string, 0,  -3);
+        $string .= "')";
 
         return $string;
 
