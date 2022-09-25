@@ -4,6 +4,6 @@ include("funcoes.php");
 
 $funcoes = new funcoes();
 
-echo $funcoes->getSessao();
+echo json_encode($funcoes->getSessao());
 
 ?>

@@ -69,24 +69,24 @@ class funcoes extends database{
         $sql = "INSERT INTO clientes(nome_cliente, cpf_cliente, email_cliente, data_nasc_cliente, cep_cliente, cidade_cliente, uf_cliente, bairro_cliente, rua_cliente, numero_cliente, complemento_cliente, telefone_cliente, senha_cliente) VALUES $string;";
         $result = $this->query($sql);
 
-        $sql = "SELECT id_cliente FROM clientes WHERE cpf_cliente = $cpf";
+        $sql = "SELECT id_cliente, nome_cliente FROM clientes WHERE cpf_cliente = $cpf";
         $result = $this->query($sql);
 
-        $this->setSessao($this->loop($result, 'id_cliente'));
+        $this->setSessao($this->loop($result, ''));
 
         return 0;
 
     }
 
-    function setSessao($id){
+    function setSessao($dados){
 
-        $_SESSION['idCliente'] =  $id;
+        $_SESSION['dadosCliente'] =  $dados;
 
     }
 
     function getSessao(){
 
-        return $_SESSION['idCliente'];
+        return $_SESSION['dadosCliente'];
 
     }
 
