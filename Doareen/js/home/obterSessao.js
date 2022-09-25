@@ -12,7 +12,7 @@ function getSessao(){
         success: function(response){
 
             let resposta = eval(response);
-
+            console.log(resposta);
             if(resposta != null){
 
                 document.querySelectorAll(".cabecalho__lista")[1].style.display = "none";

@@ -69,7 +69,7 @@ class funcoes extends database{
         $sql = "INSERT INTO clientes(nome_cliente, cpf_cliente, email_cliente, data_nasc_cliente, cep_cliente, cidade_cliente, uf_cliente, bairro_cliente, rua_cliente, numero_cliente, complemento_cliente, telefone_cliente, senha_cliente) VALUES $string;";
         $result = $this->query($sql);
 
-        $sql = "SELECT id_cliente, nome_cliente FROM clientes WHERE cpf_cliente = $cpf";
+        $sql = "SELECT id_cliente, nome_cliente FROM clientes WHERE cpf_cliente = {$cpf}";
         $result = $this->query($sql);
 
         $this->setSessao($this->loop($result, ''));
@@ -93,6 +93,34 @@ class funcoes extends database{
 
 
     //Fim - Funções para o arquivo cadastro.php
+
+    //Inicio - Funções para o arquivo login.php
+
+    function verificar_login($dados){
+
+        $emailCliente = $dados['email'];
+        $senhaCliente = md5($dados['senha']);
+
+        $sql = "SELECT id_cliente, nome_cliente FROM clientes WHERE email_cliente = {$emailCliente} and senha_cliente = {$senhaCliente}";
+        $result = $this->query($sql);
+
+        $resultado = $this->loop($result, '');
+
+        if(sizeof($resultado) > 0){
+
+            $this->setSessao($resultado);
+
+            return 1;
+
+        }else{
+
+            return 0;
+
+        }
+
+    }
+
+    //Fim - Funções para o arquivo login.php
 
 }
 
