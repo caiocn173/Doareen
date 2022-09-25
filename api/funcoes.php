@@ -49,6 +49,8 @@ class funcoes extends database{
 
     function cadastrar_cliente($dados){
 
+        unset($dados['repsenha']);
+
         $senha = md5($dados['senha']);
         $string = "(";
 
