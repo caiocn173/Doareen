@@ -102,7 +102,7 @@ class funcoes extends database{
         $emailCliente = $dados['email'];
         $senhaCliente = md5($dados['senha']);
 
-        $sql = "SELECT id_cliente, nome_cliente FROM clientes WHERE email_cliente = {$emailCliente} and senha_cliente = {$senhaCliente}";
+        $sql = "SELECT id_cliente, nome_cliente FROM clientes WHERE email_cliente = '{$emailCliente}' and senha_cliente = '{$senhaCliente}'";
         $result = $this->query($sql);
 
         $resultado = $this->loop($result, '');
