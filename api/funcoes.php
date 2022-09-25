@@ -3,8 +3,6 @@
 include("database.php");
 
 class funcoes extends database{
-    
-    public $_SESSION['idCliente'];
 
     //Construtor da classe
 
