@@ -11,9 +11,9 @@ function getSessao(){
         type: "POST",
         success: function(response){
 
-            console.log(response);
+            console.log(eval(response));
 
-            if(response){
+            if(response != "null"){
 
                 document.querySelectorAll(".cabecalho__lista")[1].style.display = "none";
                 document.querySelector(".cabecalho__nome").classList.remove("cabecalho__nome-especifico");
