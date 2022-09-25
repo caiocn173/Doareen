@@ -115,15 +115,23 @@ function cadastrar(array_dados){
 
     let  url = "https://doareen-zzgi.vercel.app/api/cadastro.php";
     let json = JSON.stringify(array_dados);
-    console.log(array_dados);
+
     $.ajax({
 
         url: url,
         type: "POST",
         data: {dados: json},
         success: function(response){
-            console.log(response);
-            //window.location.href = "/index.html";
+
+            if(response == 1){
+
+                alert("Este cadastro já existe");
+
+            }else{
+
+                window.location.href = "/index.html";
+
+            }
 
         },
         error: function(){

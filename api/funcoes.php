@@ -41,7 +41,9 @@ class funcoes extends database{
 
         }else{
 
-            return $this->cadastrar_cliente($dados);
+            $this->cadastrar_cliente($dados);
+
+            return 0;
 
         }
 
