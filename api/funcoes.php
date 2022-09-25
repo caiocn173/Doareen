@@ -6,10 +6,9 @@ class funcoes extends database{
 
     //Construtor da classe
 
-    function __construct(){
+    public function __construct(){
 
         session_start();
-        $this->$_SESSION['idCliente'] = 0;
 
     }
 
@@ -91,7 +90,7 @@ class funcoes extends database{
 
     function setSessao($id){
 
-        $this->$_SESSION['idCliente'] =  $id;
+        $_SESSION['idCliente'] =  $id;
 
     }
 
