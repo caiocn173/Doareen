@@ -2,6 +2,8 @@
 
 include("database.php");
 
+$database = new database;
+
 class funcoes extends database{
 
     //Início - Funções genéricas
@@ -31,7 +33,7 @@ class funcoes extends database{
         $cpf = $dados['cpf'];
 
         $sql = "SELECT * FROM clientes WHERE cpf_cliente = {$cpf}";
-        $result = $this->database->query($sql);
+        $result = $database->query($sql);
 
         $resultado = $this->loop($result, '');
 
@@ -62,7 +64,7 @@ class funcoes extends database{
         $string .= ")";
 
         $sql = "INSERT INTO clientes(nome_cliente, cpf_cliente, email_cliente, data_nasc_cliente, cep_cliente, cidade_cliente, uf_cliente, bairro_cliente, rua_cliente, numero_cliente, complemento_cliente, telefone_cliente, senha_cliente) VALUES $string;";
-        $result = $this->database->query($sql);
+        $result = $database->query($sql);
 
         return 0;
 
