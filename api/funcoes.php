@@ -51,7 +51,7 @@ class funcoes extends database{
 
         unset($dados['repsenha']);
 
-        $senha = md5($dados['senha']);
+        $dados['senha'] = md5($dados['senha']);
         $string = "(";
 
         foreach($dados as $field => $value){
