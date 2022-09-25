@@ -41,9 +41,7 @@ class funcoes extends database{
 
         }else{
 
-            $this->cadastrar_cliente($dados);
-
-            return 0;
+            return $this->cadastrar_cliente($dados);
 
         }
 
@@ -54,6 +52,7 @@ class funcoes extends database{
         unset($dados['repsenha']);
 
         $dados['senha'] = md5($dados['senha']);
+        $cpf = $dados['cpf'];
         $string = "(";
 
         foreach($dados as $field => $value){
@@ -68,7 +67,10 @@ class funcoes extends database{
         $sql = "INSERT INTO clientes(nome_cliente, cpf_cliente, email_cliente, data_nasc_cliente, cep_cliente, cidade_cliente, uf_cliente, bairro_cliente, rua_cliente, numero_cliente, complemento_cliente, telefone_cliente, senha_cliente) VALUES $string;";
         $result = $this->query($sql);
 
-        return $sql;
+        $sql = "SELECT cpf_cliente FROM clientes WHERE cpf_cliente = $cpf";
+        $result = $this->query($sql);
+
+        return $this->loop($result, 'cpf_cliente');
 
     }
 

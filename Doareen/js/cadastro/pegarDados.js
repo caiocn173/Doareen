@@ -53,8 +53,8 @@ function validarDados(array_dados){
 
         alert("As senhas não correspondem!");
 
-        inputs[11].classList.add("container__input-erro");
         inputs[12].classList.add("container__input-erro");
+        inputs[13].classList.add("container__input-erro");
 
         array_dados = [];
 
@@ -64,8 +64,8 @@ function validarDados(array_dados){
 
             alert("Sua senha deve ter pelo menos 7 caracteres!");
     
-            inputs[11].classList.add("container__input-erro");
             inputs[12].classList.add("container__input-erro");
+            inputs[13].classList.add("container__input-erro");
     
             array_dados = [];
     
@@ -89,8 +89,8 @@ function validarDados(array_dados){
     
             inputs[1].classList.remove("container__input-erro");
             inputs[4].classList.remove("container__input-erro");
-            inputs[11].classList.remove("container__input-erro");
             inputs[12].classList.remove("container__input-erro");
+            inputs[13].classList.remove("container__input-erro");
 
             array_dados.cpf = array_dados.cpf.replaceAll(".", "");
             array_dados.cpf = array_dados.cpf.replace("-", "");
@@ -129,7 +129,9 @@ function cadastrar(array_dados){
 
             }else{
 
-                window.location.href = "/index.html";
+                localStorage.setItem("clientId", reponse);
+
+                window.location.href = "/Doareen/paginas/index.html";
 
             }
 
