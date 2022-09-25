@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", getSessao);
 
 function getSessao(){
 
-    let url = "https://doareen-zzgi.vercel.app/api/sessao.php";
+    let url = "https://doareen.herokuapp.com/api/sessao.php";
 
     $.ajax({
 
