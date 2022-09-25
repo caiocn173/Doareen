@@ -2,9 +2,13 @@
 
 include("database.php");
 
-$database = new database;
-
 class funcoes extends database{
+
+    public function __construct(){
+
+        $database = new database;
+
+    }
 
     //Início - Funções genéricas
     
