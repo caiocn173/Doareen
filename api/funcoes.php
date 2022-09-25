@@ -61,10 +61,10 @@ class funcoes extends database{
         $string = substr($string, 0,  -3);
         $string .= "')";
 
-        return $string;
-
         $sql = "INSERT INTO clientes(nome_cliente, cpf_cliente, email_cliente, data_nasc_cliente, cep_cliente, cidade_cliente, uf_cliente, bairro_cliente, rua_cliente, numero_cliente, complemento_cliente, telefone_cliente, senha_cliente) VALUES $string;";
         $result = $this->query($sql);
+
+        return $sql;
 
     }
 
