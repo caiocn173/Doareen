@@ -129,7 +129,7 @@ function cadastrar(array_dados){
 
             }else{
 
-                localStorage.setItem("clientId", reponse);
+                localStorage.setItem("clientId", response);
 
                 window.location.href = "/Doareen/paginas/index.html";
 
