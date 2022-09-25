@@ -54,11 +54,11 @@ class funcoes extends database{
 
         foreach($dados as $field => $value){
 
-            $string .= $value . ",";
+            $string .= "'" . $value . "','";
 
         }
 
-        $string = substr($string, 0,  -2);
+        $string = substr($string, 0,  -3);
         $string .= ")";
 
         return $string;
