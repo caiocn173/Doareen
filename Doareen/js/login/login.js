@@ -1,7 +1,7 @@
 const inputs = document.querySelectorAll(".container__input");
 const botaoLogin = document.querySelector(".login__botao");
 
-botaoCadastro.addEventListener("click", pegarDadosLogin);
+botaoLogin.addEventListener("click", pegarDadosLogin);
 
 function pegarDadosLogin(){
 
