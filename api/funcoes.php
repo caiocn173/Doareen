@@ -123,6 +123,16 @@ class funcoes extends database{
 
     //Fim - Funções para o arquivo login.php
 
+    //Inicio - Funções para o arquivo logout.php
+
+    function logout(){
+
+        $this->setSessao(null);
+
+    }
+
+    //Fim - Funções para o arquivo logout.php
+
 }
 
 ?>
