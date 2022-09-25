@@ -12,10 +12,6 @@ class funcoes extends database{
 
     }
 
-    session_start();
-
-    $_SESSION['idCliente'] =  0;
-
     //Início - Funções genéricas
     
     function loop($result, $campo){
