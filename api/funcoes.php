@@ -3,6 +3,17 @@
 include("database.php");
 
 class funcoes extends database{
+    
+    public $_SESSION['idCliente'];
+
+    //Construtor da classe
+
+    function __construct(){
+
+        session_start();
+        $this->$_SESSION['idCliente'] = 0;
+
+    }
 
     session_start();
 
