@@ -4,6 +4,10 @@ include("database.php");
 
 class funcoes extends database{
 
+    session_start();
+
+    $_SESSION['idCliente'] =  0;
+
     //Início - Funções genéricas
     
     function loop($result, $campo){
@@ -70,23 +74,19 @@ class funcoes extends database{
         $sql = "SELECT id_cliente FROM clientes WHERE cpf_cliente = $cpf";
         $result = $this->query($sql);
 
-        $this->iniciaSessao($this->loop($result, 'id_cliente'));
+        $this->setSessao($this->loop($result, 'id_cliente'));
 
         return 0;
 
     }
 
-    function iniciaSessao($id){
+    function setSessao($id){
 
-        session_start();
-
-        $_SESSION['idCliente'] =  $id;
+        $this->$_SESSION['idCliente'] =  $id;
 
     }
 
     function getSessao(){
-
-        session_start();
 
         return $_SESSION['idCliente'];
 
