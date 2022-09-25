@@ -54,7 +54,7 @@ class funcoes extends database{
 
         foreach($dados as $field => $value){
 
-            $string .= "'" . $value . "','";
+            $string .= "'" . $value . "',";
 
         }
 
