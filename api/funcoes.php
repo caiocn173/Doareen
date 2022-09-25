@@ -2,6 +2,8 @@
 
 include("database.php");
 
+session_start();
+
 class funcoes extends database{
 
     //Início - Funções genéricas
