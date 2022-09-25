@@ -31,8 +31,9 @@ class funcoes extends database{
     function verificar_cliente($dados){
 
         $cpf = $dados['cpf'];
+        $email = $dados['email'];
 
-        $sql = "SELECT * FROM clientes WHERE cpf_cliente = {$cpf}";
+        $sql = "SELECT * FROM clientes WHERE cpf_cliente = {$cpf} AND email_cliente = {$email}";
         $result = $this->query($sql);
 
         $resultado = $this->loop($result, '');
