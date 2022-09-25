@@ -4,14 +4,6 @@ include("database.php");
 
 class funcoes extends database{
 
-    //Construtor da classe
-
-    public function __construct(){
-
-        session_start();
-
-    }
-
     //Início - Funções genéricas
     
     function loop($result, $campo){
