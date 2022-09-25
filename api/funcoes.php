@@ -70,9 +70,29 @@ class funcoes extends database{
         $sql = "SELECT id_cliente FROM clientes WHERE cpf_cliente = $cpf";
         $result = $this->query($sql);
 
-        return $this->loop($result, 'id_cliente');
+        $this->iniciaSessao($this->loop($result, 'id_cliente'));
+
+        return 0;
 
     }
+
+    function iniciaSessao($id){
+
+        session_start();
+
+        $_SESSION['idCliente'] =  $id;
+
+    }
+
+    function getSessao(){
+
+        session_start();
+
+        return $_SESSION['idCliente'];
+
+    }
+
+
 
     //Fim - Funções para o arquivo cadastro.php
 
