@@ -16,6 +16,16 @@ die ("Não foi possível conectar ao servidor PostGreSQL");
 //caso a conexão seja efetuada com sucesso, exibe uma mensagem ao usuário
 echo "Conexão efetuada com sucesso!!";
 
+$result = pg_query($connect, "SELECT * FROM clientes");
+if (!$result) {
+  echo "An error occurred.\n";
+  exit;
+}
+
+while ($row = pg_fetch_row($result)) {
+  echo "Cliente: $row";
+}
+
 
 
 
