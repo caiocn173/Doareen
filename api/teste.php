@@ -1,16 +1,20 @@
 <?php
 
-$host="localhost";
-$port=3306;
-$socket="";
-$user="root";
-$password="75489873";
-$dbname="doareen";
+$servidor = "ec2-23-23-151-191.compute-1.amazonaws.com";
+//Aqui é o nome de usuário do seu banco de dados, root é o servidor inicial e
+//básico de todo servidor, mas recomenda-se não usar o usuario root e sim criar um novo usuário
+$usuario = "jlnrrtrcncxdri";
+//Aqui colocamos a senha do usuário, por padrão o usuário root vem sem senha,
+//mas é altamente recomendável criar uma senha para o usuário root, visto que ele é
+//o que tem mais privilégios no servidor
+$senha ="ed6ead83f589868ba10d5c1dd33199883daaaad7f50eadb48f9935d3819d13a4";
 
-$con = new mysqli($host, $user, $password, $dbname, $port, $socket)
-	or die ('Could not connect to the database server' . mysqli_connect_error());
-
-//$con->close();
+//Aqui criamos a conexão utilizando o servidor, usuario e senha,
+//caso dê erro, retorna um erro ao usuário.
+$conexao = pg_connect($servidor, $usuario, $senha) or
+die ("Não foi possível conectar ao servidor PostGreSQL");
+//caso a conexão seja efetuada com sucesso, exibe uma mensagem ao usuário
+echo "Conexão efetuada com sucesso!!";
 
 
 
