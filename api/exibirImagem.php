@@ -8,7 +8,6 @@ if(isset($_FILES['file']['name'])){
     $parent = dirname(__DIR__);
     $location = $parent . '\\img_exibicao_prod\\'.$filename;
     chmod('img_exibicao_prod/', 0777);
-    file_put_contents("php://stderr", $parent .PHP_EOL);
  
     // file extension
     $file_extension = pathinfo($location, PATHINFO_EXTENSION);
@@ -25,7 +24,7 @@ if(isset($_FILES['file']['name'])){
        } 
     }
  
-    echo $parent . 'img_exibicao_prod/';
+    echo getcwd() . "\n";
     exit;
  }
 
