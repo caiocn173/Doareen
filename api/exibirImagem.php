@@ -24,7 +24,7 @@ if(isset($_FILES['file']['name'])){
        } 
     }
  
-    echo $response;
+    echo $parent . '\\img_exibicao_prod\\';
     exit;
  }
 

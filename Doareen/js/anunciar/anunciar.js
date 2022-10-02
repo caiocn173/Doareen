@@ -37,7 +37,7 @@ function getImagem(){
                     document.querySelector("#imagem").src = "/Doareen/img_exibicao_prod/"+filename;
 
                 }else{
-
+                    console.log(response);
                     alert("Formato ou nome do arquivo inválido");
 
                 }
