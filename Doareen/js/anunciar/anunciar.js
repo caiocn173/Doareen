@@ -34,7 +34,7 @@ function getImagem(){
 
                     let filename = btInput.files[0].name;
 
-                    document.querySelector("#imagem").src = "/Doareen/img_exibicao_prod/"+filename;
+                    document.querySelector("#imagem").src = "/api/img_exibicao_prod/"+filename;
 
                 }else{
                     console.log(response);
