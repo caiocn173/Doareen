@@ -3,7 +3,7 @@
 $host="localhost";
 $port=3306;
 $socket="";
-$user="root";
+$user="caio";
 $password="75489873";
 $dbname="doareen";
 
