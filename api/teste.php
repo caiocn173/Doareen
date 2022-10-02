@@ -1,22 +1,22 @@
 <?php
 
-/*$host="localhost";
+$host="localhost";
 $port=3306;
 $socket="";
 $user="root";
-$password="";
-$dbname="sakila";
+$password="75489873";
+$dbname="doareen";
 
 try {
     $dbh = new PDO("mysql:host={$host};port={$port};dbname={$dbname}", $user, $password));
 } catch (PDOException $e) {
     echo 'Connection failed: ' . $e->getMessage();
 }
-*/
 
 
 
-$dbHost = 'localhost';
+
+/*$dbHost = 'localhost';
 $dbUsername = 'root';
 $dbPassword = '75489873';
 $dbName = 'doareen';
@@ -41,6 +41,6 @@ while($row = mysqli_fetch_assoc($result)){
 
     }
 
-}
+}*/
 
 ?>
