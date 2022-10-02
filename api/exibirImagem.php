@@ -7,7 +7,7 @@ if(isset($_FILES['file']['name'])){
     // Location
     $parent = dirname(__DIR__);
     $location = $parent . '\\img_exibicao_prod\\'.$filename;
-    print("este é o diretório: " . $parent)
+    print("este é o diretório: " . $parent);
  
     // file extension
     $file_extension = pathinfo($location, PATHINFO_EXTENSION);
