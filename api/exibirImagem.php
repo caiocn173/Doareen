@@ -7,7 +7,7 @@ if(isset($_FILES['file']['name'])){
     // Location
     $parent = dirname(__DIR__);
     $location = $parent . '\\img_exibicao_prod\\'.$filename;
-    chmod('img_exibicao_prod/', 0777);
+    chmod('/app/api', 0777);
  
     // file extension
     $file_extension = pathinfo($location, PATHINFO_EXTENSION);
