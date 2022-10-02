@@ -23,7 +23,7 @@ if(isset($_FILES['file']['name'])){
        } 
     }
  
-    echo getcwd() . "\n";
+    echo $response;
     exit;
  }
 
