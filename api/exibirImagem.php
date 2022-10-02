@@ -6,7 +6,7 @@ if(isset($_FILES['file']['name'])){
     
     // Location
     $parent = dirname(__DIR__);
-    $location = $parent . '/img_exibicao_prod/'.$filename;
+    $location = $parent . '\\img_exibicao_prod\\'.$filename;
  
     // file extension
     $file_extension = pathinfo($location, PATHINFO_EXTENSION);
