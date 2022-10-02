@@ -5,7 +5,7 @@ if(isset($_FILES['file']['name'])){
     $filename = $_FILES['file']['name'];
     
     // Location
-    $location = 'img_exibicao_prod/'.$filename;
+    $location = 'https://doareen.herokuapp.com/Doareen/img_exibicao_prod/'.$filename;
  
     // file extension
     $file_extension = pathinfo($location, PATHINFO_EXTENSION);
