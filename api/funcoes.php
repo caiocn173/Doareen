@@ -115,7 +115,7 @@ class funcoes extends database{
 
         }else{
 
-            return $emailCliente . " " . $senhaCliente;
+            return 0;
 
         }
 
