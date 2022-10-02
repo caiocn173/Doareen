@@ -3,7 +3,7 @@
 class database {
 	var $x;
 	function __construct() {
-		$this->x=mysqli_connect("sql10.freemysqlhosting.net","sql10522028","2qTSZeEq1S","sql10522028");
+		$this->x=mysqli_connect("localhost","root","75489873","doareen");
 		
 		mysqli_set_charset($this->x,"utf8");
 		
