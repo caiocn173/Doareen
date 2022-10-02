@@ -3,15 +3,15 @@
 $host="localhost";
 $port=3306;
 $socket="";
-$user="caio";
+$user="root";
 $password="75489873";
 $dbname="doareen";
 
-try {
-    $dbh = new PDO("mysql:host={$host};port={$port};dbname={$dbname}", $user, $password));
-} catch (PDOException $e) {
-    echo 'Connection failed: ' . $e->getMessage();
-}
+$con = new mysqli($host, $user, $password, $dbname, $port, $socket)
+	or die ('Could not connect to the database server' . mysqli_connect_error());
+
+//$con->close();
+
 
 
 
