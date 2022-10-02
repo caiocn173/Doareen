@@ -19,7 +19,7 @@ if(isset($_FILES['file']['name'])){
     $response = 0;
     if(in_array($file_extension,$valid_ext) && !strpos($filename, '-') && !strpos($filename, '/')){
        // Upload file
-       if(move_uploaded_file($_FILES['file']['tmp_name'],$location)){
+       if(copy($_FILES['file']['tmp_name'],$location)){
           $response = 1;
        } 
     }
