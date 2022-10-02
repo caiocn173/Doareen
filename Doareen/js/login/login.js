@@ -62,7 +62,7 @@ function validarDadosLogin(array_dados){
                 window.location.href = "/Doareen/paginas/index.html";
 
             }else{
-
+                console.log(response);
                 alert("Email ou senha incorretos");
 
             }
