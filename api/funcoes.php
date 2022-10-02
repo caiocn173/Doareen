@@ -33,7 +33,7 @@ class funcoes extends database{
         $cpf = $dados['cpf'];
         $email = $dados['email'];
 
-        $sql = "SELECT * FROM clientes WHERE cpf_cliente = {$cpf} OR email_cliente = '{$email}'";
+        $sql = "SELECT * FROM clientes WHERE cpf_cliente = '{$cpf}' OR email_cliente = '{$email}'";
         $result = $this->query($sql);
 
         $resultado = $this->loop($result, '');
