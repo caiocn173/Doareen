@@ -5,7 +5,7 @@ if(isset($_FILES['file']['name'])){
     $filename = $_FILES['file']['name'];
     
     // Location
-    $location = 'app/Doareen/img_exibicao_prod/'.$filename;
+    $location = $_SERVER["DOCUMENT_ROOT"].'/Doareen/img_exibicao_prod/'.$filename;
  
     // file extension
     $file_extension = pathinfo($location, PATHINFO_EXTENSION);
