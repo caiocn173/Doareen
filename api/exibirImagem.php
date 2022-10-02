@@ -6,8 +6,7 @@ if(isset($_FILES['file']['name'])){
     
     // Location
     $parent = dirname(__DIR__);
-    $location = $parent . '\\api\\img_exibicao_prod\\'.$filename;
-    chmod('/app\\api\\exibirImagem.php', 0777);
+    $location = 'img_exibicao_prod/'.$filename;
  
     // file extension
     $file_extension = pathinfo($location, PATHINFO_EXTENSION);
@@ -19,7 +18,7 @@ if(isset($_FILES['file']['name'])){
     $response = 0;
     if(in_array($file_extension,$valid_ext) && !strpos($filename, '-') && !strpos($filename, '/')){
        // Upload file
-       if(copy($_FILES['file']['tmp_name'],$location)){
+       if(move_uploaded_file($_FILES['file']['tmp_name'],$location)){
           $response = 1;
        } 
     }
