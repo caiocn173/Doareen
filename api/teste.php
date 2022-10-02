@@ -23,7 +23,7 @@ if (!$result) {
 }
 
 while ($row = pg_fetch_row($result)) {
-  echo "Cliente: $row";
+  print_r($row);
 }
 
 
