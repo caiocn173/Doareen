@@ -12,13 +12,13 @@ class funcoes extends database{
         if(strlen($campo) == 0){
             $arr = [];
             $i = 0;
-            while($row = mysqli_fetch_assoc($result)){
+            while($row = pg_fetch_assoc($result)){
                 array_push($arr, $row);
                 $i++;
             }
             return $arr;
         }else{
-            while($row = mysqli_fetch_assoc($result)){
+            while($row = pg_fetch_assoc($result)){
                 return $row[$campo];
             }
         }
