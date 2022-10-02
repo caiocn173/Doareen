@@ -25,6 +25,8 @@ function getImagem(){
 
             url: url,
             type: "POST",
+            processData: false,
+            contentType: false,
             data: formData,
             success: function(response){
 
