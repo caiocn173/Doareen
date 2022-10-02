@@ -11,7 +11,7 @@ $senha ="ed6ead83f589868ba10d5c1dd33199883daaaad7f50eadb48f9935d3819d13a4";
 
 //Aqui criamos a conexão utilizando o servidor, usuario e senha,
 //caso dê erro, retorna um erro ao usuário.
-$conexao = pg_connect($servidor, $usuario, $senha) or
+$connect = pg_connect("host=ec2-23-23-151-191.compute-1.amazonaws.com dbname=d96t37t1e8l25b user=jlnrrtrcncxdri password=ed6ead83f589868ba10d5c1dd33199883daaaad7f50eadb48f9935d3819d13a4") or
 die ("Não foi possível conectar ao servidor PostGreSQL");
 //caso a conexão seja efetuada com sucesso, exibe uma mensagem ao usuário
 echo "Conexão efetuada com sucesso!!";
