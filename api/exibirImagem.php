@@ -24,7 +24,7 @@ if(isset($_FILES['file']['name'])){
        } 
     }
  
-    echo $parent . '\\img_exibicao_prod\\';
+    echo $parent . '\\api\\img_exibicao_prod\\';
     exit;
  }
 
