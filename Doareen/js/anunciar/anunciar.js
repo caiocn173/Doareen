@@ -1,5 +1,6 @@
 let btSelecionar = document.querySelector(".campos__input-botao");
 let btInput = document.querySelector(".campos__input-arquivo");
+let btPublicar = document.querySelector(".botao__publicar");
 
 btSelecionar.addEventListener("click", () => {
 
@@ -8,6 +9,8 @@ btSelecionar.addEventListener("click", () => {
 });
 
 btInput.addEventListener("change", getImagem);
+
+btPublicar.addEventListener("click", publicar);
 
 function getImagem(){
 
@@ -56,5 +59,23 @@ function getImagem(){
         alert("Escolha um arquivo!");
 
     }
+
+}
+
+function publicar(){
+
+    let inputs = document.querySelectorAll(".campos__input");
+    let array_dados = [];
+
+    inputs = inputs.pop();
+    inputs = inputs.pop();
+
+    inputs.forEach((element) => {
+
+        array_dados[element.name] = element.value;
+
+    });
+
+    console.log(array_dados);
 
 }
