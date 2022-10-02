@@ -7,6 +7,8 @@ btSelecionar.addEventListener("click", () => {
 
 });
 
+btInput.addEventListener("change", getImagem);
+
 function getImagem(){
 
     let files = document.querySelector(".campos__input-arquivo").files;
