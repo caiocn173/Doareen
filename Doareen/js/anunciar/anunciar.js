@@ -60,6 +60,8 @@ function getImagem(){
 
 }
 
+btPublicar.addEventListener("click", publicar);
+
 function publicar(){
 
     let nomeItem = document.querySelector("#nomeItem").value;
