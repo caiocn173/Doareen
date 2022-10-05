@@ -7,7 +7,7 @@ $dir = "img_produtos/";
 $destino = "";
 echo $_POST['nome'];
 echo $_FILES['arquivo']['tmp_name'];
-if(!empty($_FILES["file"])){
+/*if(!empty($_FILES["file"])){
     echo "11111111";
     $file = $_FILES["file"];
     $destino = "$dir".$file["name"];
@@ -18,7 +18,7 @@ if(!empty($_FILES["file"])){
     }else{
         echo "<script language = 'javascript' type='text/javascript'>alert('A foto do item é obritatória');window.location.href='anunciar.html'</script>";
     }    
-}
+}*/
 
 
 
