@@ -138,7 +138,7 @@ class funcoes extends database{
     function publicar($nomeItem, $categoria, $condicao, $descricao, $destino){
 
         $dados = $this->getSessao();
-
+        print_r($dados);
         if(!empty($_FILES["file"])){
 
             $file = $_FILES["file"];
