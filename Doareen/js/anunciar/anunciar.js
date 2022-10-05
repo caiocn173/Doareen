@@ -59,3 +59,34 @@ function getImagem(){
     }
 
 }
+
+function publicar(){
+
+    let nomeItem = document.querySelector("#nomeItem").value;
+    let categoria = document.querySelector("select[name='categoria']").value;
+    let condicao = document.querySelector("select[name='condicao']").value;
+    let descricao = document.querySelector(".campos__input-textarea").value;
+    let arquivo = document.querySelector("#file").files;
+
+    let formData = new FormData();
+
+    formData.append("file", arquivo[0]);
+
+    let url = "/api/publicar.php";
+
+    $.ajax({
+
+        url: url,
+        type: "POST",
+        processData: false,
+        contentType: false,
+        data: {nome: nomeItem, categoria: categoria, condicao: condicao, descricao: descricao, arquivo: formData},
+        success: function(response){
+
+            console.log(response);
+
+        }
+
+    });
+
+}

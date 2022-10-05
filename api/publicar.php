@@ -5,7 +5,8 @@ include("funcoes.php");
 $gerenciador = new funcoes;
 $dir = "img_produtos/";
 $destino = "";
-
+echo $_POST['nome'];
+echo $_FILES['arquivo']['tmp_name'];
 if(!empty($_FILES["file"])){
     echo "11111111";
     $file = $_FILES["file"];
