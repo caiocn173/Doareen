@@ -18,7 +18,7 @@ function getImagem(){
 
         let formData = new FormData();
 
-        formData.append("file", files[0]);
+        formData.append("arquivo", files[0]);
 
         let url = "https://doareen.herokuapp.com/api/exibirImagem.php";
 
