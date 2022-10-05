@@ -139,9 +139,9 @@ class funcoes extends database{
 
         $dados = $this->getSessao();
         return $destino;
-        if(!empty($_FILES["file"])){
+        if(!empty($_FILES["arquivo"])){
 
-            $file = $_FILES["file"];
+            $file = $_FILES["arquivo"];
 
             if(sizeOf($dados) > 0){
 

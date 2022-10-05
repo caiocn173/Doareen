@@ -6,9 +6,9 @@ $gerenciador = new funcoes;
 $dir = "img_produtos/";
 $destino = "";
 
-if(!empty($_FILES["file"])){
+if(!empty($_FILES["arquivo"])){
     echo "11111111";
-    $file = $_FILES["file"];
+    $file = $_FILES["arquivo"];
     $destino = "$dir".$file["name"];
 
     if(move_uploaded_file($file["tmp_name"], "$dir/".$file["name"])){
