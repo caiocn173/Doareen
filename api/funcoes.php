@@ -75,7 +75,7 @@ class funcoes extends database{
 
         $this->setSessao($this->loop($result, ''));
 
-        return 0;
+        return $sql;
 
     }
 
