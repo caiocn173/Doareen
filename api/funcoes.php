@@ -148,6 +148,7 @@ class funcoes extends database{
                 echo "chegou aqui";
                 $sql = "INSERT INTO itens(nome_item, descricao, categoria, condicao, nome_cliente, nome_imagem, status, id_cliente) values('$nomeItem', '$descricao', '$categoria', '$condicao', '".$dados['nome_cliente']."', '".$destino."', 'disponivel', '".$dados['id_cliente']."')";
                 $result = $this->query($sql);
+                return $sql;
 
             }
         }

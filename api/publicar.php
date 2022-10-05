@@ -18,7 +18,7 @@ if(!empty($_FILES["file"])){
     }    
 }
 
-$dados = $gerenciador->publicar($_POST['nomeItem'], $_POST['categoria'], $_POST['condicao'], $_POST['descricao'], $destino);
+echo $gerenciador->publicar($_POST['nomeItem'], $_POST['categoria'], $_POST['condicao'], $_POST['descricao'], $destino);
 
 
 
