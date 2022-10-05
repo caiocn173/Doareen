@@ -128,8 +128,8 @@ function cadastrar(array_dados){
                 alert("Este cadastro já existe");
 
             }else{
-
-                window.location.href = "/Doareen/paginas/index.html";
+                console.log(response);
+                //window.location.href = "/Doareen/paginas/index.html";
 
             }
 
