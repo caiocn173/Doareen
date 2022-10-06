@@ -1,5 +1,5 @@
 <?php
-header("Access-Control-Allow-Origin: *");
+
 if(isset($_FILES['file']['name'])){
     // file name
     $filename = $_FILES['file']['name'];
