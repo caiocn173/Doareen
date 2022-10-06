@@ -3,17 +3,10 @@
 include("funcoes.php");
 
 $gerenciador = new funcoes;
-$dir = "img_produtos/";
-$destino = "";
-if(isset($_POST['nome'])){
+echo $_POST['nomeItem'];
+//$dir = "img_produtos/";
+//$destino = "";
 
-    echo $_POST['nome'];
-
-}else{
-
-    echo "aaaaaaa";
-
-}
 /*if(!empty($_FILES["file"])){
     echo "11111111";
     $file = $_FILES["file"];
