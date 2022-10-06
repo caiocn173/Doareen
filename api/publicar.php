@@ -1,7 +1,7 @@
 <?php
 
 include("funcoes.php");
-
+header("Access-Control-Allow-Origin: *");
 $gerenciador = new funcoes;
 
 $dir = "img_produtos/";
