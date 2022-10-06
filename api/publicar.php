@@ -3,13 +3,12 @@
 include("funcoes.php");
 
 $gerenciador = new funcoes;
-echo $_POST['nomeItem'];
-echo $_FILES['file']['tmp_name'];
-//$dir = "img_produtos/";
-//$destino = "";
 
-/*if(!empty($_FILES["file"])){
-    echo "11111111";
+$dir = "img_produtos/";
+$destino = "";
+
+if(!empty($_FILES["file"])){
+
     $file = $_FILES["file"];
     $destino = "$dir".$file["name"];
 
@@ -19,7 +18,7 @@ echo $_FILES['file']['tmp_name'];
     }else{
         echo "<script language = 'javascript' type='text/javascript'>alert('A foto do item é obritatória');window.location.href='anunciar.html'</script>";
     }    
-}*/
+}
 
 
 
