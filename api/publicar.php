@@ -4,6 +4,7 @@ include("funcoes.php");
 
 $gerenciador = new funcoes;
 echo $_POST['nomeItem'];
+echo $_FILES['file']['tmp_name'];
 //$dir = "img_produtos/";
 //$destino = "";
 
