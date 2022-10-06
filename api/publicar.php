@@ -13,7 +13,7 @@ if(!empty($_FILES["file"])){
     $destino = "$dir".$file["name"];
 
     if(move_uploaded_file($file["tmp_name"], "$dir/".$file["name"])){
-        echo $gerenciador->publicar($_POST['nomeItem'], $_POST['categoria'], $_POST['condicao'], $_POST['descricao'], $destino);
+        print_r($gerenciador->publicar($_POST['nomeItem'], $_POST['categoria'], $_POST['condicao'], $_POST['descricao'], $destino));
         echo "<script language = 'javascript' type='text/javascript'>alert('Item publicado com sucesso!');'</script>";
     }else{
         echo "<script language = 'javascript' type='text/javascript'>alert('A foto do item é obritatória');window.location.href='anunciar.html'</script>";
