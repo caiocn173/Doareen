@@ -141,7 +141,7 @@ class funcoes extends database{
 
         if(sizeOf($dados) > 0){
 
-            $sql = "INSERT INTO itens(nome_item, descricao, categoria, condicao, nome_cliente, nome_imagem, status, id_cliente) values('$nomeItem', '$descricao', '$categoria', '$condicao', '".$dados[0]['nome_cliente']."', '".$destino."', 'disponivel', '".$dados[0]['id_cliente']."')";
+            $sql = "INSERT INTO itens(nome_item, descricao, categoria, condicao, nome_imagem, status, id_cliente) values('$nomeItem', '$descricao', '$categoria', '$condicao', '".$destino."', 'disponivel', '".$dados[0]['id_cliente']."')";
             $result = $this->query($sql);
             return $sql;
 
