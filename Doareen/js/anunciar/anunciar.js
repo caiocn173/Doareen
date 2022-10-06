@@ -15,8 +15,6 @@ function getSessao(){
             console.log(resposta);
             if(resposta != null){
 
-                document.querySelectorAll(".cabecalho__lista")[1].style.display = "none";
-                document.querySelector(".cabecalho__nome").classList.remove("cabecalho__nome-especifico");
                 document.querySelector(".cabecalho__nome").innerHTML = resposta[0].nome_cliente;
 
             }
