@@ -1,3 +1,37 @@
+document.addEventListener("DOMContentLoaded", getSessao);
+
+
+function getSessao(){
+
+    let url = "https://doareen.herokuapp.com/api/sessao.php";
+
+    $.ajax({
+
+        url: url,
+        type: "POST",
+        success: function(response){
+
+            let resposta = eval(response);
+            console.log(resposta);
+            if(resposta != null){
+
+                document.querySelectorAll(".cabecalho__lista")[1].style.display = "none";
+                document.querySelector(".cabecalho__nome").classList.remove("cabecalho__nome-especifico");
+                document.querySelector(".cabecalho__nome").innerHTML = resposta[0].nome_cliente;
+
+            }
+
+        },
+        error: function(){
+
+            console.log("Erro");
+
+        }
+
+    });
+
+}
+
 let btSelecionar = document.querySelector(".campos__input-botao");
 let btInput = document.querySelector(".campos__input-arquivo");
 let btPublicar = document.querySelector(".botao__publicar");

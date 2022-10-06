@@ -138,19 +138,15 @@ class funcoes extends database{
     function publicar($nomeItem, $categoria, $condicao, $descricao, $destino){
 
         $dados = $this->getSessao();
-        
-        if(!empty($_FILES["file"])){
 
-            $file = $_FILES["file"];
+        if(sizeOf($dados) > 0){
 
-            if(sizeOf($dados) > 0){
+            $sql = "INSERT INTO itens(nome_item, descricao, categoria, condicao, nome_cliente, nome_imagem, status, id_cliente) values('$nomeItem', '$descricao', '$categoria', '$condicao', '".$dados[0]['nome_cliente']."', '".$destino."', 'disponivel', '".$dados[0]['id_cliente']."')";
+            $result = $this->query($sql);
+            return $sql;
 
-                $sql = "INSERT INTO itens(nome_item, descricao, categoria, condicao, nome_cliente, nome_imagem, status, id_cliente) values('$nomeItem', '$descricao', '$categoria', '$condicao', '".$dados[0]['nome_cliente']."', '".$destino."', 'disponivel', '".$dados[0]['id_cliente']."')";
-                $result = $this->query($sql);
-                return $sql;
-
-            }
         }
+        
 
     }
 
