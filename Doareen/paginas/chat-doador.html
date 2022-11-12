@@ -10,7 +10,6 @@
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"> 
 		<link rel="stylesheet" href="/Doareen/css/reset.css">
 		<link rel="stylesheet" href="/Doareen/css/styles.css">
-		<script src="/Doareen/js/chat-doador/chat-doador.js"></script>
 	</head>
 	<body>
 		
@@ -26,7 +25,7 @@
 					
 				</ul>
 				
-				<a href="meu-perfil.html" class="cabecalho__nome">Enzo Gabriel</a>
+				<a href="meu-perfil.html" class="cabecalho__nome"></a>
 			
 			</div>
 		
@@ -44,13 +43,13 @@
 					
 				<div class="interessados__informacoes">
 
-					<div class="card__imagem"></div>
+					<img class="card__imagem">
 
 					<div class="card__container">
 					
-						<h2 class="card__titulo">Sanduicheira</h2>
+						<h2 class="card__titulo"></h2>
 
-						<p class="card__descricao">Sanduicheira</p>
+						<p class="card__descricao"></p>
 
 					</div>
 
@@ -65,54 +64,6 @@
                     <div class="lista__titulo">
 
                         <p>Interessados</p>
-                        
-                    </div>
-
-                    <div class="lista__interessado" data-nome="Hyago Vieira 1">
-
-                        <p>Hyago Vieira 1</p>
-                        
-                    </div>
-
-                    <div class="lista__interessado" data-nome="Hyago Vieira 2">
-
-                        <p>Hyago Vieira 2</p>
-                        
-                    </div>
-
-                    <div class="lista__interessado" data-nome="Hyago Vieira 3">
-
-                        <p>Hyago Vieira 3</p>
-                        
-                    </div>
-
-                    <div class="lista__interessado" data-nome="Hyago Vieira 4">
-
-                        <p>Hyago Vieira 4</p>
-                        
-                    </div>
-
-                    <div class="lista__interessado" data-nome="Hyago Vieira 5">
-
-                        <p>Hyago Vieira 5</p>
-                        
-                    </div>
-
-                    <div class="lista__interessado" data-nome="Hyago Vieira 6">
-
-                        <p>Hyago Vieira 6</p>
-                        
-                    </div>
-
-                    <div class="lista__interessado" data-nome="Hyago Vieira 7">
-
-                        <p>Hyago Vieira 7</p>
-                        
-                    </div>
-
-                    <div class="lista__interessado" data-nome="Hyago Vieira 8">
-
-                        <p>Hyago Vieira 8</p>
                         
                     </div>
 
@@ -133,24 +84,19 @@
                             <p>Reservar para</p>
 
                         </div>
+                      
+                      	<div class="chat-doador__botoes-container">
+
+                            <div class="chat-doador__finalizar">Finalizar doação</div>
+                          	<div class="chat-doador__cancelar">Cancelar reserva</div>
+                          
+                        </div>
     
                     </div>
     
                     <div class="chat-interessado__mensagens chat-interessado__mensagens-doador">
     
                         <div class="mensagens">
-    
-                            <div class="mensagem-interessado">
-    
-                                <p>Olá, tudo bem?</p>
-        
-                            </div>
-        
-                            <div class="mensagem-dono">
-        
-                                <p>Oi, sim e você?</p>
-        
-                            </div>
     
                         </div>
     
@@ -196,9 +142,9 @@
 				<ul class="rodape__lista">
 					
 					<li class="rodape__lista-item rodape__lista-titulo">Categorias</li>
-					<li class="rodape__lista-item"><a class="rodape__lista-link" href="moveis.html">Móveis</a></li>
-					<li class="rodape__lista-item"><a class="rodape__lista-link" href="eletrodomesticos.html">Eletrodomésticos</a></li>
-					<li class="rodape__lista-item"><a class="rodape__lista-link" href="utensilios.html">Utensílios</a></li>
+					<li class="rodape__lista-item"><a class="rodape__lista-link" data-categoria="Móvel" href="moveis.html">Móveis</a></li>
+					<li class="rodape__lista-item"><a class="rodape__lista-link" data-categoria="Eletrodoméstico" href="eletrodomesticos.html">Eletrodomésticos</a></li>
+					<li class="rodape__lista-item"><a class="rodape__lista-link" data-categoria="Utensílio" href="utensilios.html">Utensílios</a></li>
 
 				</ul>
 
@@ -215,5 +161,9 @@
 			</div>
 
 		</footer>
+      
+      	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      	<script src="/Doareen/js/chat-doador/chat-doador.js"></script>
+      
 	</body>
 </html>

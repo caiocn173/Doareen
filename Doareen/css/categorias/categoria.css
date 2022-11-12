@@ -34,7 +34,15 @@
 .categorias__card{
 
     margin-left: 0;
+  	cursor: pointer;
+  	position: relative;
 
+}
+
+.categorias__card:hover{
+ 
+  	border: 1px solid var(--azul-pesquisa);
+  
 }
 
 @media screen and (min-width: 768px) {
@@ -43,6 +51,12 @@
 
         width: 290px;
 
+    }
+  
+  	.categoria{
+  
+      	justify-content: unset;
+  
     }
     
 }

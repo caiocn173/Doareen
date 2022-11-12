@@ -47,7 +47,7 @@ function pegarDadosLogin(){
 
 function validarDadosLogin(array_dados){
 
-    let  url = "https://doareen.herokuapp.com/api/login.php";
+    let  url = "https://doareen.x10.mx/api/login.php";
     let json = JSON.stringify(array_dados);
 
     $.ajax({
@@ -56,13 +56,13 @@ function validarDadosLogin(array_dados){
         type: "POST",
         data: {dados: json},
         success: function(response){
-
+			console.log(response)
             if(response == 1){
 
                 window.location.href = "/Doareen/paginas/index.html";
 
             }else{
-
+				
                 alert("Email ou senha incorretos");
 
             }

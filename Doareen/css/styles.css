@@ -12,6 +12,7 @@
 @import url("/Doareen/css/chat-doador/chat-doador.css");
 @import url("/Doareen/css/cadastro/cadastro.css");
 @import url("/Doareen/css/login/login.css");
+@import url("/Doareen/css/historico/historico.css");
 
 body{
 
@@ -27,6 +28,7 @@ body{
 	--azul-escuro: #006B99;
 	--cor-fundo: #EDEDED;
 	--vermelho: #FF0000;
+  	--verde: #0FFF00;
 
 	background-color: var(--cor-fundo);
 

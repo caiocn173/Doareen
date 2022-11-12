@@ -1,18 +1,20 @@
 <?php
 
+ini_set( 'error_reporting', E_ALL );
+ini_set( 'display_errors', true );
+
 class database {
 	var $x;
 	function __construct() {
-		$this->x=pg_connect("host=ec2-23-23-151-191.compute-1.amazonaws.com dbname=d96t37t1e8l25b user=jlnrrtrcncxdri password=ed6ead83f589868ba10d5c1dd33199883daaaad7f50eadb48f9935d3819d13a4") or
-		die ("Não foi possível conectar ao servidor PostGreSQL");	
+		$this->x=mysqli_connect("localhost", "jdgjtiwu_doareen", "75489873", "jdgjtiwu_doareen") or
+		die ("Não foi possível conectar ao servidor");
 	}
-	
 	
 	function __destruct() {
-		@pg_close($this->x);
+		@mysqli_close($this->x);
 	}
 	function query($q) {
-		return(pg_query($this->x,$q));
+		return(mysqli_query($this->x,$q));
 	}
 	
 }

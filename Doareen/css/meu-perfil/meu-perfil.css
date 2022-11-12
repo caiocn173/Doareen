@@ -106,6 +106,59 @@
 
 }
 
+.container__interessados{
+ 
+  	position: absolute;
+    background-color: var(--vermelho);
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    right: 0;
+    text-align: center;
+    color: var(--branco);
+  
+}
+
+.container__interessados p{
+
+	margin: 4px 0;
+  
+}
+
+.card__meu-perfil{
+
+	position: relative;
+  	cursor: pointer;
+
+}
+
+.disponivel{
+
+	background-color : var(--verde);
+  	margin: 0 auto;
+  	width: 25%;
+  	color: var(--preto);
+
+}
+
+.reservado{
+
+	background-color : var(--cinza);
+  	margin: 0 auto;
+  	width: 25%;
+  	color: var(--preto);
+
+}
+
+.doado{
+
+	background-color : var(--vermelho);
+  	margin: 0 auto;
+  	width: 25%;
+  	color: var(--preto);
+
+}
+
 
 .secao-itens__titulo{
 

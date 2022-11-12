@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", getSessao);
 
 function getSessao(){
 
-    let url = "https://doareen.herokuapp.com/api/sessao.php";
+    let url = "https://doareen.x10.mx/api/sessao.php";
 
     $.ajax({
 
@@ -12,10 +12,15 @@ function getSessao(){
         success: function(response){
 
             let resposta = eval(response);
-            console.log(resposta);
-            if(resposta != null){
+            
+            if(resposta){
 
-                document.querySelectorAll(".cabecalho__lista")[1].style.display = "none";
+              	if(document.querySelectorAll(".cabecalho__lista")[1]){
+                
+                	document.querySelectorAll(".cabecalho__lista")[1].style.display = "none";
+                  
+                }
+                
                 document.querySelector(".cabecalho__nome").classList.remove("cabecalho__nome-especifico");
                 document.querySelector(".cabecalho__nome").innerHTML = resposta[0].nome_cliente;
 

@@ -113,7 +113,7 @@ function validarDados(array_dados){
 
 function cadastrar(array_dados){
 
-    let  url = "https://doareen.herokuapp.com/api/cadastro.php";
+    let  url = "https://doareen.x10.mx/api/cadastro.php";
     let json = JSON.stringify(array_dados);
 
     $.ajax({
@@ -122,9 +122,9 @@ function cadastrar(array_dados){
         type: "POST",
         data: {dados: json},
         success: function(response){
-
+			
             if(response == 1){
-
+				
                 alert("Este cadastro já existe");
 
             }else{
@@ -134,8 +134,8 @@ function cadastrar(array_dados){
             }
 
         },
-        error: function(){
-
+        error: function(response){
+			console.log(response);
             alert("Não foi possível realizar o cadastro, tente mais tarde");
 
         }

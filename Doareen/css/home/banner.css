@@ -21,7 +21,7 @@
 	border: 2px solid var(--azul-pesquisa);
 	border-radius: 5px;
 	padding-left: 1em;
-	margin: 1em 0;
+	margin: 0;
 	
 }
 
@@ -32,6 +32,53 @@
 	background-position-x: 14em;
 	font-size: 18px;
 	
+}
+
+.input__container{
+
+	position: relative;
+    width: 300px;
+    height: 35px;
+    margin: 0;
+    padding-left: 1em;
+  
+}
+
+.pesquisa__container{
+
+	border-bottom: 1px solid var(--cinza);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    height: 65px;
+    background-color: var(--branco);
+    padding: 1em 0;
+    position: relative;
+    left: -10px;
+  	cursor: pointer;
+  
+}
+
+.pesquisa__container:hover{
+
+	background-color: var(--cinza);
+
+}
+
+.pesquisa__container-imagem{
+
+	max-width: 95px;
+  	max-height: 95px;
+  	margin-left: 1em;
+
+}
+
+.pesquisa__container-nome{
+
+	display: inline;
+
 }
 
 .banner__descricao{
@@ -72,7 +119,7 @@
 
 @media screen and (min-width: 1360px) {
 	
-	.banner__pesquisa{
+	.banner__pesquisa, .input__container{
 
 		width: 370px;
 

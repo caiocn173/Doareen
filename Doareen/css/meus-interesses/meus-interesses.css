@@ -15,6 +15,7 @@
     align-items: center;
     text-decoration: none;
     justify-content: space-between;
+  	position: relative;
 
 }
 
@@ -42,7 +43,6 @@
     max-width: 130px;
     height: 80px;
     border-radius: 7px;
-    background-color: var(--azul-botao);
     margin: 1em;
 
 }
@@ -51,13 +51,14 @@
 
     color: var(--azul-pesquisa);
     font-size: 20px;
-    padding-bottom: 1em;
+    display: inline;
 
 }
 
 .card__descricao{
 
     color: var(--preto);
+  	margin-top: 10px;
 
 }
 
@@ -72,9 +73,29 @@
 
 .card__desistir{
 
-    padding-top: 1em;
-    color: var(--vermelho);
+    color: var(--branco);
+    background-color: var(--vermelho);
     text-decoration: none;
+    border-radius: 4px;
+    padding: 0.2em;
+    margin-left: 15px;
+  	cursor: pointer;
+
+}
+
+.card__desistir-mob{
+  
+  	color: var(--branco);
+    background-color: var(--vermelho);
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 0.2em;
+    margin-right: 15px;
+    cursor: pointer;
+    width: 125px;
+    display: inline;
+    position: absolute;
+  	right: 0;
 
 }
 
@@ -100,5 +121,11 @@
         display: block;
 
     }
+  
+  	.card__desistir-mob{
+      
+    	display: none;
+      
+  	}
     
 }

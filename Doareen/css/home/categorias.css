@@ -33,7 +33,7 @@
 
 .container__titulo{
 
-    color: var(--azul-botao);
+    color: var(--azul-pesquisa);
     font-size: 24px;
     font-weight: 700;
 
@@ -60,7 +60,7 @@
 
     width: 300px;
     background-color: var(--branco);
-    box-shadow: 5px 10px 15px var(--preto);
+    box-shadow: 5px 0 20px var(--preto);
     border-radius: 10px;
     text-align: left;
     padding-bottom: 2em;
@@ -74,6 +74,7 @@
     height: 200px;
     background-color: var(--azul-botao);
     margin: 1em auto;
+    display: block;
 
 }
 
@@ -86,7 +87,7 @@
 .categorias__card-titulo{
 
     font-size: 18px;
-    color: var(--azul-botao);
+    color: var(--azul-pesquisa);
     font-weight: 700;
 
 }
@@ -107,10 +108,12 @@
 .categorias__card-botao{
 
     padding: 0.5em 1.5em;
-    background-color: var(--azul-botao);
+    background-color: var(--azul-pesquisa);
     border-radius: 15px;
     text-decoration: none;
     color: var(--branco);
     margin-left: 0.5em;
+  	position: absolute;
+  	bottom: 15px;
 
 }

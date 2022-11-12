@@ -88,6 +88,12 @@
 
 }
 
+.chat-doador__botoes-container{
+
+	display: none;
+
+}
+
 .chat-doador__reservar{
 
     background-color: var(--preto);
@@ -95,6 +101,25 @@
     border-radius: 6px;
     cursor: pointer;
     padding: 1em;
+
+}
+
+.chat-doador__finalizar{
+
+    background-color: var(--verde);
+    color: var(--branco);
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 1em;
+
+}
+
+.chat-doador__cancelar{
+
+    color: var(--vermelho);
+    border-radius: 6px;
+    cursor: pointer;
+  	text-align: center;
 
 }
 

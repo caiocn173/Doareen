@@ -1,9 +1,20 @@
 document.addEventListener("DOMContentLoaded", getSessao);
 
+let linksRodape = document.querySelectorAll(".rodape__lista-link");
+
+linksRodape.forEach((element) => {
+
+	element.addEventListener("click", () => {
+    
+    	localStorage.setItem("categoria", element.dataset.categoria);
+    
+    });
+
+});
 
 function getSessao(){
 
-    let url = "https://doareen.herokuapp.com/api/sessao.php";
+    let url = "https://doareen.x10.mx/api/sessao.php";
 
     $.ajax({
 
@@ -12,11 +23,14 @@ function getSessao(){
         success: function(response){
 
             let resposta = eval(response);
-            console.log(resposta);
             if(resposta != null){
 
                 document.querySelector(".cabecalho__nome").innerHTML = resposta[0].nome_cliente;
 
+            }else{
+            
+            	window.location.href = "/Doareen/paginas/login.html";
+            
             }
 
         },
@@ -52,7 +66,7 @@ function getImagem(){
 
         formData.append("file", files[0]);
 
-        let url = "https://doareen.herokuapp.com/api/exibirImagem.php";
+        let url = "https://doareen.x10.mx/api/exibirImagem.php";
 
         $.ajax({
 
@@ -62,7 +76,7 @@ function getImagem(){
             contentType: false,
             data: formData,
             success: function(response){
-
+				console.log(response);
                 if(response == 1){
 
                     let filename = btInput.files[0].name;
@@ -70,7 +84,6 @@ function getImagem(){
                     document.querySelector("#imagem").src = "/api/img_exibicao_prod/"+filename;
 
                 }else{
-                    console.log(response);
                     alert("Formato ou nome do arquivo inválido");
 
                 }

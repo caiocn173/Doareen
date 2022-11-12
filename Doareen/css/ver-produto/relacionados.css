@@ -13,6 +13,12 @@
 
 }
 
+.categorias__relacionados{
+
+	justify-content: unset;
+
+}
+
 .relacionados__titulo{
 
     color: var(--azul-escuro);

@@ -25,7 +25,7 @@
 					
 				</ul>
 				
-				<a href="meu-perfil.html" class="cabecalho__nome">Enzo Gabriel</a>
+				<a href="meu-perfil.html" class="cabecalho__nome"></a>
 			
 			</div>
 		
@@ -43,13 +43,13 @@
 					
 				<div class="interessados__informacoes">
 
-					<div class="card__imagem"></div>
+					<img class="card__imagem">
 
 					<div class="card__container">
 					
-						<h2 class="card__titulo">Sanduicheira</h2>
+						<h2 class="card__titulo"></h2>
 
-						<p class="card__descricao">Sanduicheira</p>
+						<p class="card__descricao"></p>
 
 					</div>
 
@@ -61,26 +61,15 @@
 
 				<div class="chat-interessado__doador">
 
+                  	<a href="/Doareen/paginas/meus-interesses.html" class="chat-interessado__voltar"><img src="/Doareen/img/aiga_left_arrow.svg" alt="Voltar"></a>
 					<h2 class="doador__titulo">Doador</h2>
-					<h2 class="doador__nome">Interessado</h2>
+					<h2 class="doador__nome"></h2>
 
 				</div>
 
 				<div class="chat-interessado__mensagens">
 
 					<div class="mensagens">
-
-						<div class="mensagem-interessado">
-
-							<p>Olá, tudo bem?</p>
-	
-						</div>
-	
-						<div class="mensagem-dono">
-	
-							<p>Oi, sim e você?</p>
-	
-						</div>
 
 					</div>
 
@@ -124,9 +113,9 @@
 				<ul class="rodape__lista">
 					
 					<li class="rodape__lista-item rodape__lista-titulo">Categorias</li>
-					<li class="rodape__lista-item"><a class="rodape__lista-link" href="moveis.html">Móveis</a></li>
-					<li class="rodape__lista-item"><a class="rodape__lista-link" href="eletrodomesticos.html">Eletrodomésticos</a></li>
-					<li class="rodape__lista-item"><a class="rodape__lista-link" href="utensilios.html">Utensílios</a></li>
+					<li class="rodape__lista-item"><a class="rodape__lista-link" data-categoria="Móvel" href="moveis.html">Móveis</a></li>
+					<li class="rodape__lista-item"><a class="rodape__lista-link" data-categoria="Eletrodoméstico" href="eletrodomesticos.html">Eletrodomésticos</a></li>
+					<li class="rodape__lista-item"><a class="rodape__lista-link" data-categoria="Utensílio" href="utensilios.html">Utensílios</a></li>
 
 				</ul>
 
@@ -143,6 +132,10 @@
 			</div>
 
 		</footer>
+      
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      	<script src="/Doareen/js/home/obterSessao.js"></script>
+      	<script src="/Doareen/js/chat-interessado/interessado.js"></script>
 		
 	</body>
 </html>

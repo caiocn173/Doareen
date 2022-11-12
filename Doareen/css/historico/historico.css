@@ -1,0 +1,35 @@
+.historico__titulo{
+
+	text-align: center;
+
+}
+
+.historico__container{
+
+	background-color: var(--branco);
+  	border-radius: 8px;
+  	width: 90vw;
+  	height: 50vh;
+  	margin: 3em auto;
+  	padding: 2em 0;
+
+}
+
+.historico__card{
+
+	max-width: 900px;
+  	margin: 2em auto;
+
+}
+
+.card__dados-doacao{
+
+	margin: 0 1em;
+
+}
+
+.card__dados-texto{
+
+	margin: 1em 0;
+
+}
